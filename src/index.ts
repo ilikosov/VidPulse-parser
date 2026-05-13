@@ -1,15 +1,11 @@
-export interface ParseTitleResult {
-  readonly source: string;
-  readonly title: string;
-  readonly normalizedTitle: string;
-}
+export type { DictionaryAlias, ParserDictionary } from "./dictionary.types";
+export type {
+  ParsedMetadata,
+  ParseTitleResult,
+  ParserModule,
+  ParseTitleOptions,
+} from "./parser.types";
 
-export function parseTitle(input: string): ParseTitleResult {
-  const title = input.trim();
-
-  return {
-    source: input,
-    title,
-    normalizedTitle: title.toLowerCase()
-  };
-}
+export { DictionaryModule } from "./dictionary.module";
+export { RegexModule } from "./regex.module";
+export { ParserService, parseTitle } from "./parser.service";
