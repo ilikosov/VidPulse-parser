@@ -11,9 +11,9 @@ npm install @ilikosov/vidpulse-parser
 ## Usage
 
 ```ts
-import { parseTitle } from '@ilikosov/vidpulse-parser';
+import { parseTitle } from "@ilikosov/vidpulse-parser";
 
-const parsed = parseTitle('  Hello VidPulse  ');
+const parsed = parseTitle("  Hello VidPulse  ");
 
 console.log(parsed);
 // {
@@ -28,4 +28,18 @@ console.log(parsed);
 ```bash
 npm run build
 npm test
+```
+
+## Installation from GitHub Packages
+
+Add this to your project `.npmrc`:
+
+```ini
+@ilikosov:registry=https://npm.pkg.github.com
+```
+
+Then install:
+
+```bash
+npm install @ilikosov/vidpulse-parser
 ```
